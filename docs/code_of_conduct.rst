@@ -136,10 +136,10 @@ members. This section covers actual concrete steps.
 Contacting maintainers
 ~~~~~~~~~~~~~~~~~~~~~~
 
-As a small and young project, we don't yet have a Code of Conduct
+As a small project, we don't yet have a Code of Conduct
 enforcement team. Hopefully that will be addressed as we grow, but for
-now, any issues should be addressed to `Steven Loria
-<https://github.com/sloria>`__, via `email <mailto:sloria1@gmail.com>`__
+now, any issues should be addressed to `@sloria
+<https://github.com/sloria>`__, via `email <mailto:oss@stevenloria.com>`__
 or any other medium that you feel comfortable with. Using words like
 "marshmallow code of conduct" in your subject will help make sure your
 message is noticed quickly.
