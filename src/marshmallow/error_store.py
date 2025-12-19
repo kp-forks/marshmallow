@@ -6,8 +6,6 @@
     Users should not need to use this module directly.
 """
 
-from copy import deepcopy
-
 from marshmallow.exceptions import SCHEMA
 
 
@@ -20,13 +18,19 @@ class ErrorStore:
         # field error  -> store/merge error messages under field name key
         # schema error -> if string or list, store/merge under _schema key
         #              -> if dict, store/merge with other top-level keys
-        messages = deepcopy(messages)
+        messages = copy_containers(messages)
         if field_name != SCHEMA or not isinstance(messages, dict):
             messages = {field_name: messages}
         if index is not None:
             messages = {index: messages}
         self.errors = merge_errors(self.errors, messages)
 
+def copy_containers(errors):
+    if isinstance(errors, list):
+        return [copy_containers(val) for val in errors]
+    if isinstance(errors, dict):
+        return {key: copy_containers(val) for key, val in errors.items()}
+    return errors
 
 def merge_errors(errors1, errors2):  # noqa: PLR0911
     """Deeply merge two error messages.
