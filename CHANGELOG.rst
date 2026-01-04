@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-4.2.0 (unreleased)
+4.2.0 (2026-01-04)
 ------------------
 
 Other changes:
