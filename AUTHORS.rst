@@ -182,3 +182,4 @@ Contributors (chronological)
 - `@agentgodzilla <https://github.com/agentgodzilla>`_
 - Xiao `@T90REAL <https://github.com/T90REAL>`_
 - jfo `@jafournier <https://github.com/jafournier>`_
+- thanhlecongg `@thanhlecongg <https://github.com/thanhlecongg>`_
