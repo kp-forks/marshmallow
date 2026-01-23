@@ -2,6 +2,14 @@ Changelog
 =========
 
 
+4.2.1 (2026-01-23)
+------------------
+
+Bug fixes:
+
+- Fix validation of URLs beginning with uppercare `FILE` (:issue:`2891`).
+  Thanks :user:`thanhlecongg` for reporting and fixing.
+
 4.2.0 (2026-01-04)
 ------------------
 
