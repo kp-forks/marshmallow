@@ -1,6 +1,6 @@
 [project]
 name = "marshmallow"
-version = "4.2.3"
+version = "4.2.4"
 description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
 readme = "README.rst"
 license = "MIT"
@@ -43,12 +43,7 @@ docs = [
   "sphinxext-opengraph",
 ]
 tests = ["pytest", "simplejson"]
-dev = [
-  { include-group = "tests" },
-  "tox",
-  "tox-uv",
-  "pre-commit>=3.5,<5.0",
-]
+dev = [{ include-group = "tests" }, "tox", "tox-uv", "pre-commit>=3.5,<5.0"]
 
 [tool.uv]
 default-groups = ["dev"]
